@@ -19,11 +19,12 @@
             width: 100%;
             height: 100vh;
             overflow: hidden;
-            background-color: #010104;
+            background-color: #000000;
             color: #ffffff;
             cursor: default;
         }
 
+        /* Elite Deep Space Nebula & Lightning Background */
         #bg-canvas {
             position: fixed;
             top: 0;
@@ -33,6 +34,7 @@
             z-index: 1;
         }
 
+        /* Pure White Pixel UFO Follower */
         #ufo-canvas {
             position: fixed;
             top: 0;
@@ -54,17 +56,18 @@
             padding: 20px;
         }
 
+        /* e-z.bio Style Floating Glass Card with Glow */
         .profile-card {
             width: 480px;
-            background: rgba(8, 8, 14, 0.78);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 30px;
-            padding: 34px 30px 26px 30px;
-            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.9), 
-                        0 0 60px rgba(100, 100, 255, 0.12),
-                        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            background: rgba(10, 10, 16, 0.75);
+            backdrop-filter: blur(35px);
+            -webkit-backdrop-filter: blur(35px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 32px;
+            padding: 36px 32px 28px 32px;
+            box-shadow: 0 50px 120px rgba(0, 0, 0, 0.95), 
+                        0 0 80px rgba(168, 85, 247, 0.2),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2);
             position: relative;
             animation: cardFloat 7s ease-in-out infinite;
         }
@@ -74,16 +77,17 @@
             50% { transform: translateY(-8px) rotate(0.2deg); }
         }
 
+        /* Views Badge (Matching e-z.bio top left) */
         .views-badge {
             display: inline-flex;
             align-items: center;
             gap: 6px;
             font-size: 13px;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.65);
-            margin-bottom: 16px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 18px;
             background: rgba(255, 255, 255, 0.05);
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
@@ -93,19 +97,20 @@
             font-size: 14px;
         }
 
+        /* Avatar Section */
         .avatar-container {
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .avatar-ring {
-            width: 110px;
-            height: 110px;
+            width: 115px;
+            height: 115px;
             border-radius: 50%;
             padding: 3px;
             background: linear-gradient(135deg, #a855f7, #3b82f6, #ffffff);
-            box-shadow: 0 0 30px rgba(168, 85, 247, 0.35);
+            box-shadow: 0 0 35px rgba(168, 85, 247, 0.4);
         }
 
         .avatar-img {
@@ -116,13 +121,14 @@
             background-color: #12121a;
         }
 
+        /* Profile Info */
         .profile-info {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 26px;
         }
 
         .profile-name {
-            font-size: 26px;
+            font-size: 28px;
             font-weight: 800;
             letter-spacing: -0.5px;
             display: inline-flex;
@@ -143,20 +149,22 @@
         .profile-bio {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.65);
+            font-weight: 500;
         }
 
+        /* Social Icons Grid */
         .social-grid {
             display: flex;
             justify-content: center;
             gap: 14px;
-            margin-bottom: 28px;
-            padding-bottom: 24px;
+            margin-bottom: 30px;
+            padding-bottom: 26px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .social-btn {
-            width: 48px;
-            height: 48px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -173,15 +181,16 @@
             background: rgba(255, 255, 255, 0.15);
             border-color: rgba(168, 85, 247, 0.6);
             transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(168, 85, 247, 0.35);
+            box-shadow: 0 12px 30px rgba(168, 85, 247, 0.4);
             color: #c084fc;
         }
 
+        /* Discord Widget Card */
         .discord-widget {
-            background: rgba(15, 15, 26, 0.7);
+            background: rgba(15, 15, 26, 0.75);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            padding: 14px 16px;
+            border-radius: 22px;
+            padding: 14px 18px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -190,9 +199,9 @@
         }
 
         .discord-widget:hover {
-            border-color: rgba(88, 101, 242, 0.5);
-            background: rgba(22, 22, 38, 0.9);
-            box-shadow: 0 8px 30px rgba(88, 101, 242, 0.2);
+            border-color: rgba(88, 101, 242, 0.6);
+            background: rgba(22, 22, 40, 0.9);
+            box-shadow: 0 10px 35px rgba(88, 101, 242, 0.25);
         }
 
         .discord-user-info {
@@ -212,7 +221,7 @@
             height: 48px;
             border-radius: 50%;
             object-fit: cover;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         .status-dot {
@@ -237,7 +246,7 @@
 
         .discord-text .status-msg {
             font-size: 12px;
-            color: rgba(255, 255, 255, 0.55);
+            color: rgba(255, 255, 255, 0.6);
             margin-top: 2px;
         }
 
@@ -264,14 +273,17 @@
 </head>
 <body>
 
+    <!-- Galaxy Nebula & Thunder Background -->
     <canvas id="bg-canvas"></canvas>
+    
+    <!-- Pure White Pixel UFO Follower -->
     <canvas id="ufo-canvas"></canvas>
 
     <div class="container">
         <div class="profile-card">
             <div class="views-badge">
                 <i class="fa-solid fa-eye"></i>
-                <span>4,812</span>
+                <span>2,885</span>
             </div>
 
             <div class="avatar-container">
@@ -295,7 +307,7 @@
                 <a href="https://discord.gg/KAyKNPFY56" target="_blank" class="social-btn" title="Discord Server">
                     <i class="fa-brands fa-discord"></i>
                 </a>
-                <a href="https://www.youtube.com/@LolYouAllBS" target="_blank" class="social-btn" title="YouTube Channel">
+                <a href="https://www.youtube.com/@LolYouAllBS" target="_blank" class="social-btn" title="Creator Studio">
                     <i class="fa-solid fa-video"></i>
                 </a>
                 <a href="https://www.youtube.com/@LolYouAllBS" target="_blank" class="social-btn" title="Website">
@@ -322,7 +334,7 @@
     </div>
 
     <script>
-        // --- Ultra-Realistic 4K-Style Galaxy Nebula & Thunder Engine ---
+        // --- Photorealistic Galaxy Nebula & Thunder Engine ---
         const bgCanvas = document.getElementById('bg-canvas');
         const bgCtx = bgCanvas.getContext('2d');
 
@@ -335,53 +347,53 @@
         });
 
         const stars = [];
-        for (let i = 0; i < 300; i++) {
+        for (let i = 0; i < 350; i++) {
             stars.push({
                 x: Math.random() * width,
                 y: Math.random() * height,
                 size: Math.random() * 2.2,
                 alpha: Math.random(),
-                speed: 0.003 + Math.random() * 0.015
+                speed: 0.003 + Math.random() * 0.012
             });
         }
 
         let lightningTimer = 0;
         let activeLightning = null;
 
-        function generateRealisticBolt() {
+        function createBolt() {
             const startX = Math.random() * width;
             const points = [{x: startX, y: 0}];
             let currX = startX;
             let currY = 0;
 
-            while (currY < height * 0.75) {
-                currX += (Math.random() - 0.5) * 80;
-                currY += Math.random() * 40 + 20;
+            while (currY < height * 0.8) {
+                currX += (Math.random() - 0.5) * 90;
+                currY += Math.random() * 45 + 15;
                 points.push({x: currX, y: currY});
             }
-            return { points, alpha: 1.0, decay: 0.045 };
+            return { points, alpha: 1.0, decay: 0.04 };
         }
 
-        function renderGalaxy(timestamp) {
-            bgCtx.fillStyle = '#010104';
+        function renderScene() {
+            bgCtx.fillStyle = '#000000';
             bgCtx.fillRect(0, 0, width, height);
 
-            // Volumetric multi-layered cosmic gas nebulae
-            const nebula1 = bgCtx.createRadialGradient(width * 0.25, height * 0.35, 80, width * 0.25, height * 0.35, width * 0.8);
-            nebula1.addColorStop(0, 'rgba(67, 56, 202, 0.22)');
-            nebula1.addColorStop(0.5, 'rgba(15, 23, 42, 0.15)');
-            nebula1.addColorStop(1, 'transparent');
-            bgCtx.fillStyle = nebula1;
+            // Volumetric cosmic gas clouds
+            const neb1 = bgCtx.createRadialGradient(width * 0.3, height * 0.3, 100, width * 0.3, height * 0.3, width * 0.85);
+            neb1.addColorStop(0, 'rgba(88, 28, 135, 0.28)');
+            neb1.addColorStop(0.5, 'rgba(30, 27, 75, 0.18)');
+            neb1.addColorStop(1, 'transparent');
+            bgCtx.fillStyle = neb1;
             bgCtx.fillRect(0, 0, width, height);
 
-            const nebula2 = bgCtx.createRadialGradient(width * 0.8, height * 0.65, 50, width * 0.8, height * 0.65, width * 0.7);
-            nebula2.addColorStop(0, 'rgba(147, 51, 234, 0.2)');
-            nebula2.addColorStop(0.5, 'rgba(30, 58, 138, 0.12)');
-            nebula2.addColorStop(1, 'transparent');
-            bgCtx.fillStyle = nebula2;
+            const neb2 = bgCtx.createRadialGradient(width * 0.75, height * 0.7, 80, width * 0.75, height * 0.7, width * 0.75);
+            neb2.addColorStop(0, 'rgba(147, 51, 234, 0.22)');
+            neb2.addColorStop(0.5, 'rgba(59, 130, 246, 0.12)');
+            neb2.addColorStop(1, 'transparent');
+            bgCtx.fillStyle = neb2;
             bgCtx.fillRect(0, 0, width, height);
 
-            // Stars twinkling
+            // Twinkling stars
             stars.forEach(star => {
                 star.alpha += star.speed;
                 if (star.alpha > 1 || star.alpha < 0.2) star.speed *= -1;
@@ -391,19 +403,19 @@
                 bgCtx.fill();
             });
 
-            // Thunder cycle
+            // Random thunder flash
             lightningTimer++;
-            if (lightningTimer > 100 + Math.random() * 140) {
-                activeLightning = generateRealisticBolt();
+            if (lightningTimer > 110 + Math.random() * 150) {
+                activeLightning = createBolt();
                 lightningTimer = 0;
             }
 
             if (activeLightning) {
                 bgCtx.save();
-                bgCtx.shadowBlur = 40;
-                bgCtx.shadowColor = 'rgba(255, 255, 255, 0.9)';
+                bgCtx.shadowBlur = 45;
+                bgCtx.shadowColor = 'rgba(255, 255, 255, 0.95)';
                 bgCtx.strokeStyle = `rgba(240, 240, 255, ${activeLightning.alpha})`;
-                bgCtx.lineWidth = 3;
+                bgCtx.lineWidth = 3.5;
                 bgCtx.beginPath();
                 activeLightning.points.forEach((p, idx) => {
                     if (idx === 0) bgCtx.moveTo(p.x, p.y);
@@ -412,20 +424,19 @@
                 bgCtx.stroke();
                 bgCtx.restore();
 
-                // Lightning ambient wash
-                bgCtx.fillStyle = `rgba(168, 85, 247, ${activeLightning.alpha * 0.15})`;
+                bgCtx.fillStyle = `rgba(168, 85, 247, ${activeLightning.alpha * 0.18})`;
                 bgCtx.fillRect(0, 0, width, height);
 
                 activeLightning.alpha -= activeLightning.decay;
                 if (activeLightning.alpha <= 0) activeLightning = null;
             }
 
-            requestAnimationFrame(renderGalaxy);
+            requestAnimationFrame(renderScene);
         }
-        requestAnimationFrame(renderGalaxy);
+        requestAnimationFrame(renderScene);
 
 
-        // --- Pure White Pixel UFO Follower ---
+        // --- Pure White Pixel UFO Follower Engine ---
         const ufoCanvas = document.getElementById('ufo-canvas');
         const ufoCtx = ufoCanvas.getContext('2d');
 
@@ -454,28 +465,25 @@
             ufoCtx.imageSmoothingEnabled = false;
 
             // Pure white glowing tractor beam
-            const beam = ufoCtx.createLinearGradient(0, 10, 0, 100);
-            beam.addColorStop(0, 'rgba(255, 255, 255, 0.45)');
+            const beam = ufoCtx.createLinearGradient(0, 10, 0, 110);
+            beam.addColorStop(0, 'rgba(255, 255, 255, 0.5)');
             beam.addColorStop(1, 'rgba(255, 255, 255, 0.0)');
             ufoCtx.fillStyle = beam;
             ufoCtx.beginPath();
             ufoCtx.moveTo(-12 * scale, 10);
             ufoCtx.lineTo(12 * scale, 10);
-            ufoCtx.lineTo(32 * scale, 100);
-            ufoCtx.lineTo(-32 * scale, 100);
+            ufoCtx.lineTo(35 * scale, 110);
+            ufoCtx.lineTo(-35 * scale, 110);
             ufoCtx.closePath();
             ufoCtx.fill();
 
             // Pure White Pixel UFO Hull
             ufoCtx.fillStyle = '#ffffff';
             ufoCtx.shadowColor = '#ffffff';
-            ufoCtx.shadowBlur = 18;
+            ufoCtx.shadowBlur = 20;
 
-            // Bottom rim
             ufoCtx.fillRect(-16 * scale, 4 * scale, 32 * scale, 5 * scale);
-            // Main body
             ufoCtx.fillRect(-12 * scale, 0, 24 * scale, 4 * scale);
-            // Dome
             ufoCtx.fillRect(-7 * scale, -6 * scale, 14 * scale, 6 * scale);
 
             ufoCtx.restore();
